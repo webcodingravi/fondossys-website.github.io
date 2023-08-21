@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="uVrOsdaXO_O_sFRU1Ncdk5-pPy6gHSwPYNLlZNVmQ80" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fondossys Group</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/LOGO.png"/>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    user-select:none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track{
+  background-color: #21ade2;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f38634;
+}
+
+.btn:focus {
+    box-shadow:none;
+}
+ .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .top-head {
+   height: 60px;
+   background-color: rgb(26, 26, 26);
+   color: rgb(241, 240, 240);
+   padding-top: 5px;
+   padding-left: 20px;
+   font-size: 0.8rem;
+
+   
+  }
+
+ 
+  #topheader .navbar{
+    background: url(img/banner.png);
+    background-size: 100% 100%;
+    margin-top: 30px;
+    transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    -o-webkit-transition:all .2s linear;
+
+
+  }
+
+
+  #topheader .navbar .nav-item .nav-link{
+    color: white;
+     margin-left: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: relative;
+    
+}
+
+#topheader .navbar .nav-item .nav-link::after {
+   position: absolute;
+   content: '';
+   left: 0;
+   width: 0;
+   bottom: 0;
+   height: 2px;
+   background: rgb(247, 181, 58);
+   transition: 0.2s;
+}
+
+#topheader .navbar .nav-item .nav-link.active::after,
+#topheader .navbar .nav-item .nav-link:hover::after{
+  width: 100%;
+}
+
+#topheader .navbar .nav-item .nav-link.active,
+#topheader .navbar .nav-item .nav-link:hover {
+  color:rgb(247, 181, 58);
+}
+
+#topheader .navbar-toggler:focus{
+  box-shadow: none;
+  outline: none;
+  
+}
+
+
+
+#topheader .navbar-toggler{
+  border: none  ;
+  height: auto;
+  color: white;
+  line-height: 2;
+  
+}
+
+
+
+/* start dropdown */
+
+.dropdown-menu {
+  background-color: #00aff0!important;
+  border: none!important;
+    
+    
+    
+}
+
+
+.dropdown-menu .dropdown-item{
+  color: rgb(255, 255, 255);
+  text-align: left!important;
+
+
+}
+
+.dropdown-menu .dropdown-item:hover{
+  background-color: white;
+  color: #fa842c;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+/* exit dropdown */
+
+
+#more {display: none;}
+
+        
+#about img  {
+    cursor: pointer;
+    opacity: 0.9;
+     transition: transform .2s;
+}
+#about img:hover {
+     opacity: 1.5;
+
+        }
+
+         /* start social icon */
+
+.icon-bar {
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 96%;
+    
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+      
+}
+
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.whatsapp {
+  background: #2bb932;
+  color: white;
+}
+
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+.instagram {
+  background: #dd20ae;
+  color: white;
+}
+
+
+ /* end icons */
+
+
+ 
+ /* start footer section*/
+
+
+.contact_icon {
+  width: 50px;
+  margin-top: -300px; /* Set a specific width */
+   /* Dark-grey background */
+}
+
+.contact_icon a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: rgb(250, 250, 250); /* White text color */
+  border: 1px solid gray;
+  border-radius: 1px;
+  font-size: 15px; /* Increased font-size */
+  margin-top: 20px;
+}
+
+.contact_icon a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+
+
+.contact_address p {
+   margin-left: 60px;
+   font-size: 0.9rem;
+   margin-top: -10px;
+   
+}
+
+.contact_address p:hover{
+ color: #48c0f8;
+ cursor: pointer;
+  
+}
+
+.contact_address h6{
+  margin-left: 60px;
+  color: gray;
+  font-weight: bold;
+
+}
+
+
+.contact_mobile p{
+  margin-top: -20px;
+  margin-left: 60px;
+  font-size: 1rem;
+  color: white;
+}
+
+.contact_mobile h6{
+  margin-bottom: 20px;
+  margin-left: 60px;
+  color: gray;
+  font-weight: bold;
+}
+
+.contact_mobile p:hover{
+  color: #48c0f8;
+  cursor: pointer;
+   
+ }
+ 
+
+.contact_email p{
+  margin-top: -20px;
+  margin-left: 60px;
+  font-size: 1rem;
+  color: white;
+}
+
+.contact_email h6{
+  margin-bottom: 20px;
+  margin-left: 60px;
+  color: gray;
+  font-weight: bold;
+}
+
+.contact_email p:hover{
+  color: #48c0f8;
+  cursor: pointer;
+   
+ }
+
+.contact_web p{
+  margin-top: -20px;
+  margin-left: 60px;
+  font-size: 1rem;
+  color: white;
+}
+
+.contact_web h6{
+  margin-bottom: 20px;
+  margin-left: 60px;
+  color: gray;
+  font-weight: bold;
+}
+
+
+.contact_web p:hover{
+  color: #48c0f8;
+  cursor: pointer;
+   
+ }
+ 
+        
+.footersection {
+
+  padding-top: 200px;
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background:rgba(0,0,0,0.8);
+    position: relative;
+}
+
+.footersection p {
+    color: #fff;
+    
+}
+.footersection li a {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    
+}
+.footersection h3 {
+     text-decoration: uppercase;
+    color:#fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+#myBtn1 {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #00abff;
+    padding:10px;
+    border-radius: 10px;
+}
+
+#myBtn1:hover {
+    background: #606060;
+}
+
+.copyright-text p{
+    font-size: 12px;
+    line-height:20px;
+
+}
+
+/*end footer section*/
+        
+/********** media queries *********/
+
+@media(max-width: 768px) {
+    .nav-item {
+        text-align: center!important;
+    }
+       
+    .icon-bar {
+      margin-left: -10%;
+    }
+        
+    .navbar #logo {
+      width: 7rem;
+      margin-left: -12px;
+      height: 3rem;
+    }
+
+    
+    
+
+    
+
+    .footersection .footer-div1 {
+      text-align: center;
+      margin-top: 6rem;
+
+    }
+
+    .copyright-text {
+      margin-top: 5rem;
+      text-align: center;
+    
+    }
+
+    }
+    
+    </style>
+
+    
+</head>
+    
+<body>
+    
+  <div class="top-head fixed-top">
+    <span> <i class="fa fa-envelope"> info@fondossys.com </i></span> 
+  </div>
+  
+    
+<!------ start navbar create ------>
+    
+<div class="header" id="topheader">
+  <nav class="navbar navbar-expand-lg bg-white navbar-dark fixed-top" id="nav2">
+    <!-- Brand -->
+    <div class="container">
+   <a class="navbar-brand"> <img src="img/LOGO.png" alt="logo" height="80px" id="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars" aria-hidden="true navbar-toggler"></i>
+    </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+     
+        
+            <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+          Services <i class="fa fa-angle-down" style="font-size: 15px;"></i>
+        </a>
+         <div class="dropdown-menu">
+          <a class="dropdown-item" href="Legal%20certification.html">Legal & Certification Services</a>
+          <a class="dropdown-item" href="IT%20Services.html">IT Services</a>
+          <a class="dropdown-item" href="Finance Services.html">Finance Services</a>
+          <a class="dropdown-item" href="Consultancsy Services.html">Consultancsy Services</a>
+          <a class="dropdown-item" href="Corporate Services.html">Corporate Services</a>
+        </div>
+   
+           
+      <li class="nav-item">
+        <a class="nav-link active" href="fondossys%20group.html">Our Group</a>
+      </li>
+        
+  
+  
+           <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+        
+    </ul>
+      </div>
+  </nav>
+  </div>
+  </div>
+    
+    
+ <!------ end navbar create ------><br><br>
+    
+    
+         
+   <!------ start social media icon  ------>
+     .
+    
+    
+                                                     
+    <div class="icon-bar">
+   <a href="https://api.whatsapp.com/send?phone=+91-9810487626&text=Hello this is the starting message" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+
+  <a href="https://www.facebook.com/fondossysgroup/ " class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com/fondossys?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="https://in.linkedin.com/company/fondossys" class="linkedin"><i class="fa fa-linkedin"></i></a>
+   <a href="https://www.instagram.com/fondossys/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
+</div>
+
+    
+    
+    
+    <!---- end social media icon ----->
+    
+    
+ <!------ start our Group create ------>
+    <section class="vision text-secondary" id="visi" data-aos="fade-up" data-aos-delay="300">
+    
+     <div class="container ">
+   <h1 class="text-center pt-5" style="font-size: 30px; margin-top: 100px;"> Our Group</h1> 
+    <hr class="w-25 mx-auto pt-5">
+       
+    <a href="Legal%20certification.html"> <img src="img/FONDOSSYS%20GROUP.jpg" class="rounded mx-auto d-block img-fluid" height="500" width="600" style="margin-left: 15rem;"></a>
+
+
+
+         
+         
+         
+ </div>
+        
+    
+    </section>
+    
+    
+     <!------ end our Group ------><br><br>
+      
+    
+      <!---- start footer----->
+    
+    
+   
+    <footer class="footersection" id="footerfdiv" data-aos="fade-up" data-aos-delay="300">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 footer-div ">
+            <div>
+        
+            <h3>Contact Us</h3>
+            
+<div class="contact_address">
+              <h6>Address:</h6>
+             <p>A-58-B, First Floor, 25 Feet Road, Chanakya Place Part-1,                                
+
+              Uttam Nagar, New Delhi- 110059</p>
+
+
+            </div>
+        
+            <div class="contact_mobile">
+              <h6>Mobile:</h6>
+              <p> +91-9810487626 </p>
+          </div>
+
+          <div class="contact_email">
+            <h6>Email:</h6>
+            <p> info@fondossys.com <br> fondossys@gmail.com </p>
+
+          </div>
+
+          <div class="contact_web">
+            <h6>Website:</h6>
+            <p> www.fondossys.com </p>
+
+          </div>
+
+   <div class="contact_icon">
+
+    <a class="active" href="#"><i class="fa fa-map-marker"></i></a>
+    <a href="#"><i class="fa fa-phone"></i></a>
+    <a href="#"><i class="fa fa-envelope"></i></a>
+    <a href="#"><i class="fa fa-globe"></i></a>
+
+
+ 
+
+</div>
+
+            
+            
+            <!------
+                
+              <p> A-58-B, First Floor, 25 Feet Road, Chanakya Place Part-1,                              
+                  Uttam Nagar, New Delhi- 110059<br>                                       <i class="fa fa-phone"> +91-9810487626</i><br>
+              <i class="fa fa-envelope"> info@fondossys.com</i></p>
+                ----->
+                
+            
+                </div>
+                
+            </div>
+          <div class="col-lg-4 col-md-6 col-12 footer-div1 text-center">
+              <div>
+              <h3>Locate Us</h3>
+        
+            <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=A-58-B,%20First%20Floor%2025%20Feet%20Road,%20Chanakya%20Place%20Part-1%20Opp.%20C-1,%20Janakpuri,%20Uttam%20Nagar,%20New%20Delhi,%20New%20Delhi,%20Delhi%20110059+(fondossys%20group)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="http://www.gps.ie/">sport gps</a></iframe>
+                
+                </div>
+                  </div>
+            
+            </div>
+        
+        
+    
+            
+            <div class="col-lg-4 col-md-6 col-12 footer-div1 text-center">
+                <h3>Let's Connect</h3>
+            <div class="bg-success" style="height: 100px; color: white; padding-top: 25px; font-size: 1.2rem; border-radius: 5px;">
+                
+                   Thanks for contacting us! <br> we will be in touch with you shortly
+                
+                </div>
+           
+            </div>
+    
+        
+        
+            <div class="col-12">
+              <div class="copyright-text text-lg-center pt-3 mb-lg-0" style="margin-top: 30px;">
+                <p class="mb-0">Copyright &#169;<a href="www.fondossys.com">fondossys Group</a>. All Rights Reserved !</p>
+              </div>
+           
+
+          </div>
+    
+        </div>
+        </div>
+            
+            </div>
+         
+        </div>
+        </div>
+    
+    
+    </footer>    
+    
+    <!------end footer--->
+        
+    
+     
+    <script>
+    
+    
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+        
+    </script>     
+        
+
+        
+  
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/62ea4f5637898912e96100cd/1g9hkbqsm';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+    
+    
+    </body>
+    
+</html>
